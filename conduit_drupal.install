@@ -78,7 +78,7 @@ function conduit_drupal_install_fields() {
     ),
     'conduit_result_drupal_message' => array(
       'field_name' => 'conduit_result_drupal_message',
-      'type' => 'text',
+      'type' => 'text_long',
       'cardinality' => -1,
     ),
     'conduit_result_drupal_type' => array(
@@ -180,7 +180,7 @@ function conduit_drupal_install_instances_job($type) {
       'field_name' => 'conduit_result_drupal_message',
       'label' => $t('Message'),
       'description' => $t('Message text.'),
-      'widget' => array('type' => 'text_textfield'),
+      'widget' => array('type' => 'text_textarea'),
     ),
     'job_conduit_result_drupal_type' => array(
       'field_name' => 'conduit_result_drupal_type',
